@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e4edf0;
+    min-height: 100vh;
+}
+.header {
+    margin-top: 25px;
+}
+.header, .form {
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form {
+    margin-top: 20px;
+}
+.sort_todos {
+    font-family: 'Jost', sans-serif;
+    padding: 0.5rem;
+    margin-right: 20px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    outline: none;
+}
+.input_form {
+    border-radius: 5px 0 0 5px;
+}
+.form button {
+    border-radius: 0 5px 5px 0;
+}
+.input_form, .form button {
+    font-family: 'Jost', sans-serif;
+    outline: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    background: white;
+}
+.form button {
+    color: #9d47ff;
+    background: #f7fffe;
+    cursor: pointer;
+    transition: all 0.7s ease;
+}
+.form button:hover {
+    background: #9d47ff;
+    color: white;
+}
+
+.todo-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo {
+    min-width: 30%;
+}
+.task_area {
+    font-family: 'Jost', sans-serif;
+    margin: 0.5rem;
+    background: white;
+    font-size: 1.5rem;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease;
+}
+.material-icons.md-18 { font-size: 18px; }
+.btn_done, .btn_delete, .deadline_btn {
+    color: black;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+.btn_done {
+    background: #0BD4A2;
+}
+.btn_done:hover {
+    color: white;
+    transition: all 0.7s ease;
+}
+.btn_delete:hover, .deadline_btn:hover {
+    background: #ab79d7;
+    color: white;
+    transition: all 0.7s ease;
+}
+.btn_done i, .btn_delete i, .deadline_btn i {
+    pointer-events: none;
+}
+.todo_task {
+    flex: 1;
+    padding: 0rem 1rem;
+    outline: none;
+    color: #565685;
+}
+.task_area input {
+    font-family: 'Jost', sans-serif;
+    font-size: 1rem;
+    margin-right: 1rem;
+    outline: none;
+}
+.deadline_elem div {
+    font-size: 1rem;
+    padding-right: 1rem;
+}
+.completed {
+    opacity: 0.3;
+}
